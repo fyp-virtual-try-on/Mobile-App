@@ -1,13 +1,23 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Button, Image, Pressable } from "react-native";
 
 const Credit = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.creditsBadge}>
-        <Text style={styles.creditAmount}>My Available Credit: 55</Text>
+      <View>
+        <Text style={styles.yourfit}>YourFit</Text>
+      </View>
+      <View>
+        <Text style={styles.creditAmount}>
+          Shopping is Finally Easier with Personalized Try-On
+        </Text>
       </View>
 
-      <View style={styles.windowBadge}>
+      <View>
+        <Pressable style={styles.button} onPress={null}>
+          <Text style={styles.buttonText}>Getting Started</Text>
+        </Pressable>
+      </View>
+      {/* <View style={styles.windowBadge}>
         <View style={styles.numbersBadge}>
           <Text style={styles.numbersss}>000</Text>
         </View>
@@ -17,9 +27,9 @@ const Credit = () => {
             There are 193 attempts available to you
           </Text>
         </View>
-      </View>
+      </View> */}
 
-      <View style={styles.last}>
+      {/* <View style={styles.last}>
         <View style={styles.movieBadge} elevation={20}>
           <Image
             style={styles.tinyLogo}
@@ -35,6 +45,22 @@ const Credit = () => {
           <Text style={styles.adText}>Invite your friend to get credit</Text>
         </View>
       </View>
+      <View style={styles.last}>
+        <View style={styles.movieBadge} elevation={20}>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/movie.jpg")}
+          />
+          <Text style={styles.adText}>Watch </Text>
+        </View>
+        <View style={styles.inviteBadge} elevation={20}>
+          <Image
+            style={styles.tinyLogo}
+            source={require("../../assets/friends.png")}
+          />
+          <Text style={styles.adText}>Invite your friend to get credit</Text>
+        </View>
+      </View> */}
     </View>
   );
 };
@@ -42,7 +68,8 @@ const Credit = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#e7e8e8",
+    justifyContent: "center",
     alignItems: "center",
   },
   tinyLogo: {
@@ -55,9 +82,9 @@ const styles = StyleSheet.create({
 
   last: {
     flexDirection: "row",
-    marginTop: "5%",
+    // marginTop: "2%",
     flexWrap: "wrap",
-    flex: 0.3,
+    flex: 0.6,
   },
   movieBadge: {
     backgroundColor: "white",
@@ -76,7 +103,7 @@ const styles = StyleSheet.create({
     marginLeft: "2%",
   },
   creditsBadge: {
-    backgroundColor: "orange",
+    backgroundColor: "white",
     paddingTop: 20,
     paddingBottom: 20,
     width: "90%",
@@ -112,16 +139,33 @@ const styles = StyleSheet.create({
     flex: 0.2,
   },
   creditAmount: {
-    color: "white",
+    color: "#fca61f",
     fontWeight: "bold",
-    fontSize: 20,
+    fontSize: 40,
     textAlign: "center",
+    padding: 10,
   },
   adText: {
     color: "black",
     fontSize: 14,
     textAlign: "center",
     padding: 10,
+  },
+  yourfit: {
+    fontSize: 30,
+  },
+  button: {
+    backgroundColor: "#fca61f",
+    padding: 20,
+    borderRadius: 30,
+
+    width: "90%",
+    marginTop: "5%",
+  },
+  buttonText: {
+    color: "white",
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });
 

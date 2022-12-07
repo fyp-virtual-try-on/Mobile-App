@@ -52,7 +52,7 @@ export default function SignIn({ navigation }) {
               navigation.navigate("DrawerHome");
             }}
             title="Login"
-            color="orange"
+            color="#fca61f"
           ></Button>
         </View>
         <View
@@ -65,7 +65,7 @@ export default function SignIn({ navigation }) {
             marginLeft: 8,
           }}
         />
-
+        {/* 
         <View style={styles.socialButtonsContainer}>
           <View style={styles.Socialfb}>
             <Button color="blue" title="Facebook " />
@@ -73,7 +73,7 @@ export default function SignIn({ navigation }) {
           <View style={styles.SocialGoogle}>
             <Button color="red" title="Google " />
           </View>
-        </View>
+        </View> */}
         <Text
           style={{
             color: "orange",
@@ -85,7 +85,7 @@ export default function SignIn({ navigation }) {
             navigation.navigate("DrawerHome");
           }}
         >
-          Skip
+          Login as Guest
         </Text>
 
         <Text
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
     borderRightWidth: 15,
     borderBottomWidth: 0,
     borderLeftWidth: 15,
-    borderTopColor: "orange",
+    borderTopColor: "#fca61f",
     borderRightColor: "transparent",
     borderBottomColor: "transparent",
     borderLeftColor: "transparent",
@@ -154,7 +154,7 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
     flex: 0.8,
-    backgroundColor: "orange",
+    backgroundColor: "#fca61f",
     borderTopLeftRadius: 7,
     borderTopRightRadius: 7,
   },
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#e7e8e8",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
     height: 40,
     margin: 12,
     borderBottomWidth: 1,
-    borderBottomColor: "orange",
+    borderBottomColor: "#fca61f",
     padding: 10,
     width: 300,
   },

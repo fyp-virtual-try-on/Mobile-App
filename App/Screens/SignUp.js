@@ -21,6 +21,16 @@ export default function SignUp() {
         <View style={[styles.triangle, styles.arrowDown]} />
 
         <View>
+          <TextInput
+            style={styles.input}
+            value={Text}
+            placeholder="First Name"
+          />
+          <TextInput
+            style={styles.input}
+            value={Text}
+            placeholder="Last Name"
+          />
           <TextInput style={styles.input} value={Text} placeholder="Username" />
           <TextInput
             style={styles.input}
@@ -35,7 +45,7 @@ export default function SignUp() {
         </View>
 
         <View style={styles.btnSignUp}>
-          <Button title="Signup" color="orange"></Button>
+          <Button title="Signup" color="#fca61f"></Button>
         </View>
         <Text style={styles.t1}>
           Already have an account? <Text style={styles.themetext}>SignIn</Text>{" "}
@@ -59,7 +69,7 @@ const styles = StyleSheet.create({
     borderRightWidth: 15,
     borderBottomWidth: 0,
     borderLeftWidth: 15,
-    borderTopColor: "orange",
+    borderTopColor: "#fca61f",
     borderRightColor: "transparent",
     borderBottomColor: "transparent",
     borderLeftColor: "transparent",
@@ -85,12 +95,12 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end",
     alignItems: "center",
     flex: 0.7,
-    backgroundColor: "orange",
+    backgroundColor: "#fca61f",
     borderTopLeftRadius: 7,
     borderTopRightRadius: 7,
   },
   main: {
-    flex: 0.6,
+    flex: 0,
     backgroundColor: "#fff",
     borderBottomLeftRadius: 7,
     borderBottomRightRadius: 7,
@@ -105,7 +115,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#e7e8e8",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -119,7 +129,7 @@ const styles = StyleSheet.create({
     height: 40,
     margin: 12,
     borderBottomWidth: 1,
-    borderBottomColor: "orange",
+    borderBottomColor: "#fca61f",
     padding: 10,
     width: 300,
   },

@@ -1,11 +1,12 @@
 // In App.js in a new project
-import 'react-native-gesture-handler';
+import "react-native-gesture-handler";
 
 import * as React from "react";
 import { View, Text, Button } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ForgotPassword from "./App/Screens/ForgotPassword";
+
 import SignUp from "./App/Screens/SignUp";
 import SignIn from "./App/Screens/SignIn";
 import Home from "./App/Screens/Home";
@@ -55,10 +56,8 @@ function App() {
           component={DrawerHome}
           options={{ headerShown: false }}
         />
-       
       </Stack.Navigator>
     </NavigationContainer>
-    
   );
 }
 
